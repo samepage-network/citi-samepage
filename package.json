@@ -1,0 +1,60 @@
+{
+  "name": "citi-samepage",
+  "version": "1.0.0",
+  "description": "Official CitiBank client into the inter-tool protocol, SamePage.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "postinstall": "patch-package --patch-dir node_modules/samepage/patches",
+    "start": "npx samepage dev",
+    "test": "npx samepage test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samepage-network/citi-samepage.git"
+  },
+  "keywords": [
+    "CitiBank",
+    "SamePage"
+  ],
+  "author": {
+    "name": "SamePage",
+    "email": "support@samepage.network",
+    "url": "https://samepage.network"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samepage-network/citi-samepage/issues"
+  },
+  "homepage": "https://github.com/samepage-network/citi-samepage#readme",
+  "dependencies": {
+    "samepage": "^0.75.2"
+  },
+  "workspaces": [],
+  "samepage": {
+    "install": {
+      "steps": [
+        {
+          "title": "Connect your account",
+          "children": "link",
+          "props": {
+            "href": "TODO"
+          }
+        },
+        {
+          "title": "Step 2",
+          "children": "image",
+          "props": {
+            "src": "TODO"
+          }
+        },
+        {
+          "title": "Step 3",
+          "children": "image",
+          "props": {
+            "src": "TODO"
+          }
+        }
+      ]
+    }
+  }
+}
